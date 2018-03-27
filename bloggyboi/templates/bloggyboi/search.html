@@ -2,17 +2,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <html>
     <head>
-        <title>Django blog</title>
+        <title>Django Blog Search</title>
     </head>
     <body>
         <div>
-			<h1><a href="/">Anmol's Django Blog</a></h1>
-		</div>
-		<div>
-            <form type="get" action="\search.html" style="margin: 0">
-              <input  id="search_box" type="text" name="search_box"  placeholder="Search..." >
-              <button id="search_submit" type="submit" >Submit</button>
-            </form>
+			<h1><a href="/">Home</a></h1>
 		</div>
 		{% for post in posts %}
 			<div>
@@ -25,3 +19,4 @@
 		{% endfor %}
     </body>
 </html>
+

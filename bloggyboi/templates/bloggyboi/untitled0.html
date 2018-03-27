@@ -6,22 +6,17 @@
     </head>
     <body>
         <div>
-			<h1><a href="/">Anmol's Django Blog</a></h1>
-		</div>
-		<div>
-            <form type="get" action="\search.html" style="margin: 0">
-              <input  id="search_box" type="text" name="search_box"  placeholder="Search..." >
-              <button id="search_submit" type="submit" >Submit</button>
-            </form>
+			<h1><a href="/">Searching</a></h1>
 		</div>
 		{% for post in posts %}
 			<div>
 				<h1><a href="">{{ post.title }}</a></h1>
 				<p>{{ post.text|linebreaksbr }}</p>
-				<p> Created: {{post.created_date}} </p>
+				<p> Created: {{post.creation_date}}
 				<p> Published: {{ post.published_date }}</p>
-				<p> ID Number: {{ post.number }} </p>
+				<p> ID Number: {{ post.number }}
 			</div>
 		{% endfor %}
     </body>
 </html>
+
