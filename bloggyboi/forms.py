@@ -10,4 +10,6 @@ from .models import Post
 variables = ("author","title","text","created_date","published_date","number")
 
 class DropDown(forms.Form):
-    selection = forms.ChoiceField(choices = variables, required = True)
+    class Meta:
+        model = Post
+        fields = ["field"]

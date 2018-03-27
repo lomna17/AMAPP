@@ -20,5 +20,4 @@ urlpatterns = [
     url('admin/', admin.site.urls),
     url(r"", include("bloggyboi.urls")),
     url('bloggyboi/', include('bloggyboi.urls')),
-    url("search.html", include("bloggyboi.urls"))
 ]
