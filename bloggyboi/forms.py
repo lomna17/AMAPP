@@ -7,9 +7,8 @@ Created on Thu Mar 22 20:32:12 2018
 from django import forms 
 from .models import Post
 
-variables = ("author","title","text","created_date","published_date","number")
+variables = (("Auth", "author"),("Title", "title"),("Text", "text"),("Created", "created_date"),
+                 ("Published", "published_date"),("Num","number"))
 
 class DropDown(forms.Form):
-    class Meta:
-        model = Post
-        fields = ["field"]
+    field = forms.ChoiceField(choices = variables)

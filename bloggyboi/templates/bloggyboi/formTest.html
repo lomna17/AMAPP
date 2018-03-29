@@ -2,22 +2,17 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <html>
     <head>
-        <title>Django Blog Search</title>
+        <title>Searching for Specifics</title>
     </head>
     <body>
         <div>
-			<h1><a href="/">Home</a></h1>
-		</div>
-		{% for post in posts %}
-			<div>
-				<h1><a href="/">{{ post.title }}</a></h1>
-				<p> Made By: {{ post.author }} </p>
-				<p>{{ post.text|linebreaksbr }}</p>
-				<p> Created: {{post.created_date}} </p>
-				<p> Published: {{ post.published_date }}</p>
-				<p> ID Number: {{ post.number }} </p>
-			</div>
-		{% endfor %}
+			<h1><a href="/">Testing for Query?</a></h1>
+    	 </div>
+        {% for post in posts %}
+            <div>
+                <h1><a href="/">{{ post.title }}</a></h1>
+                {{ post.text|linebreaksbr }}
+            </div>
+        {% endfor %}
     </body>
 </html>
-

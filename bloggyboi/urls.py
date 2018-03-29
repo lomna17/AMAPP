@@ -9,5 +9,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
+    url(r'formTest.html', views.get_field, name="get_field"),
     url(r'search.html', views.search, name="search")
 ]
